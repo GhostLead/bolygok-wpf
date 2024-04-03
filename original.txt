@@ -1,0 +1,11 @@
+foreach (var listaelem in gyongyineniBevasarloListaja)
+{
+    EllipsoidVisual3D gyongyineni3Dben = new EllipsoidVisual3D();
+    gyongyineni3Dben.RadiusX = listaelem.E;
+    gyongyineni3Dben.RadiusY = listaelem.E;
+    gyongyineni3Dben.RadiusZ = listaelem.E;
+    gyongyineni3Dben.Center = new Point3D(listaelem.X*5,listaelem.Y*5,listaelem.Z*5);
+    gyongyineni3Dben.Fill = new SolidColorBrush(Colors.Black);
+    
+
+    ter.Children.Add(gyongyineni3Dben);
